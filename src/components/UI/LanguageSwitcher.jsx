@@ -1,5 +1,5 @@
 import { Dropdown, DropdownItem } from "flowbite-react";
-import theUk from "@assets/the-UK.svg";
+import theUk from "@assets/svg/the-UK.svg";
 function LanguageSwitcher() {
   return (
     <div className="flex items-center gap-2 border-r pr-4 border-gray-300">
