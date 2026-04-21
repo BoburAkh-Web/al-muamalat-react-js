@@ -2,7 +2,7 @@ import { FaStar, FaStarHalfAlt } from "react-icons/fa";
 import studentImg from "@assets/student-img.png";
 const Hero = () => {
   return (
-    <section className="relative w-full bg-[#009688] min-h-160 overflow-hidden flex items-center">
+    <section className="relative w-full mb-25 bg-[#009688] min-h-160 overflow-hidden flex items-center">
       <div className="max-w-360 mx-auto px-6 md:px-12 w-full grid md:grid-cols-2 gap-10 py-16">
         {/* CHAP TOMON: MATNLAR VA TUGMALAR */}
         <div className="flex flex-col justify-center z-10 text-white">

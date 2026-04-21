@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function SingIn() {
   return (
     <div>
-      <button className="border-none bg-[#009688] py-2 px-6 rounded-lg cursor-pointer text-white ">
-        Sing In
-      </button>
+      <Link to="/login" className="bg-teal-700 text-white px-4 py-2 rounded">
+        Sign in
+      </Link>
     </div>
   );
 }

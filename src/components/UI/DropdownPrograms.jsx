@@ -25,7 +25,11 @@ const dropDownArr = [
 function DropdownPrograms() {
   return (
     <div>
-      <Dropdown className="text-black " label="Programs" dismissOnClick={false}>
+      <Dropdown
+        className="text-black font-normal text-sm leading-5 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 rounded-lg"
+        label="Programs"
+        dismissOnClick={false}
+      >
         {dropDownArr.map((drop) => {
           return (
             <Link key={drop.id} to={`/${drop.href}`}>

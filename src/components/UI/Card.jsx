@@ -66,11 +66,11 @@ const cardData = [
 function Card() {
   return (
     <div className="container mx-auto px-4 py-10">
-      <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+      <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3 justify-items-center">
         {cardData.map((item) => (
           <div
             key={item.id}
-            className={`${item.bgColor} w-95 rounded-[32px] p-7.5 shadow-[0_30px_80px_rgba(15,23,42,0.08)] transition-transform duration-300 hover:-translate-y-1`}
+            className={`${item.bgColor} w-full max-w-[380px] flex flex-col justify-between rounded-xl p-7.5 shadow-[0_30px_80px_rgba(15,23,42,0.08)] transition-transform duration-300 hover:-translate-y-1`}
           >
             <div
               className={`inline-flex h-14 w-14 items-center justify-center rounded-3xl ${item.iconBg} mb-6 shadow-sm`}
@@ -87,7 +87,7 @@ function Card() {
             <p className="text-sm leading-7 text-slate-600 mb-6">
               {item.description}
             </p>
-            <button className="w-full rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white shadow-sm transition-colors duration-200 hover:bg-slate-800">
+            <button className="w-full rounded-[10px] cursor-pointer bg-slate-950 px-5 py-3 text-sm font-semibold text-white shadow-sm transition-colors duration-200 hover:bg-slate-800">
               Learn more
             </button>
           </div>
